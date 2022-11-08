@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.emailsFX-enter-from{
+    transform: translate(-50%, 0);
+}
+
+.emailsFX-enter-to{
+    transform: translate(0,0);
+}
+
+.emailsFX-enter-active{
+    transition: transform .5s;
+}
