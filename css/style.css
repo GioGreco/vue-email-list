@@ -21,18 +21,6 @@ body{
     transition: transform 1s;
 }
 
-.emailsFX-leave-from{
-    transform: translate(0,0);
-}
-
-.emailsFX-leave-to{
-    transform: translate(100%,0);
-}
-
-.emailsFX-leave-active{
-    transition: transform 1s;
-}
-
 .mail-list{
     list-style: none;
     color: rgb(0, 204, 0);
