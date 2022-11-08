@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgba(42,42,42,1) 75%, rgba(14,34,16,1) 120%);;
+}
+
 .emailsFX-enter-from{
-    transform: translate(-50%, 0);
+    transform: translate(0, 100%);
 }
 
 .emailsFX-enter-to{
@@ -13,5 +18,38 @@
 }
 
 .emailsFX-enter-active{
-    transition: transform .5s;
+    transition: transform 1s;
+}
+
+.emailsFX-leave-from{
+    transform: translate(0,0);
+}
+
+.emailsFX-leave-to{
+    transform: translate(100%,0);
+}
+
+.emailsFX-leave-active{
+    transition: transform 1s;
+}
+
+.mail-list{
+    list-style: none;
+    color: rgb(0, 204, 0);
+}
+
+.mail{
+    border-bottom: 1px solid rgb(0, 204, 0);
+}
+
+.genMail{
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, 0);
+    border: 1px solid rgb(0, 204, 0);
+    background-color: transparent;
+    color: rgb(0, 204, 0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px 5px rgb(0, 204, 0);
 }

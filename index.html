@@ -11,16 +11,16 @@
 </head>
 <body>
     
-    <div id="app">
-        <div class="h-100">
+    <div id="app" class="h-100">
+        <div class="h-100 d-flex flex-column justify-content-center align-items-center">
             <div>
-                <transition-group name="emailsFX" appear tag="ul" v-if="mailList.length > 9" class="">
-                    <li v-for="(item, index) in mailList" :key="index">
+                <transition-group name="emailsFX" appear tag="ul" v-if="mailList.length > 9" class="mail-list">
+                    <li v-for="(item, index) in mailList" :key="index" class="mail p-2">
                         {{item}}
                     </li>
                 </transition-group>
             </div>
-            <button @click="getMailApi">Visualizza Mail</button>
+            <button @click="getMailApi" class="genMail position-absolute">Visualizza Mail</button>
         </div>
     </div>
 
